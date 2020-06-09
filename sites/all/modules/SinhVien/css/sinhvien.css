@@ -1,0 +1,233 @@
+ 
+
+/* css cho list */
+
+.home .manh{
+  margin-right: 700px;
+  height: 160px;
+            width:690px;
+}
+.page_list .hihi .cc {
+  position: relative;
+  width: 100%;
+  max-width: 100px;
+  background:  #15626d;
+  padding: 20px;
+}
+
+ .page_list .hihi .cc img {
+  width: 100%;
+  height: auto;
+}
+
+ .page_list .hihi .cc {
+  position: absolute;
+  top: 16%;
+  left: 83%;
+
+  transform: translate(-100%, -50%);
+  /* -ms-transform: translate(-50%, -50%); */
+ 
+  color: white;
+  font-size: 15px;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  text-align: center;
+}
+
+ .page_list .hihi .cc:hover {
+  background-color: #b7e3e8;
+  color: white;
+}
+ .page_list .cc2 {
+  border-radius: 15px;
+ }
+
+
+.page_list .hihi1  {
+  position: relative;
+  width: 100%;
+  max-width: 100px;
+  background:  #4ad4c5;
+  padding: 20px;
+}
+
+ .page_list .hihi1 img {
+  width: 100%;
+  height: auto;
+}
+
+ .page_list .hihi1  {
+  position: absolute;
+  top: 16.2%;
+  left: 20%;
+
+  transform: translate(-100%, -50%);
+  /* -ms-transform: translate(-50%, -50%); */
+ 
+ 
+  font-size: 15px;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  text-align: center;
+}
+
+ .page_list .hihi1 :hover {
+  
+  color: white;
+}
+
+
+
+/*css cho home */
+ .home .navbar {
+  overflow: hidden;
+  /* padding: 15px; */
+  background-color: #237dbb; /* toan bo o tren */
+}
+
+ .home .navbar a {
+  float: left;
+  font-size: 16px;
+  color: #e0ecf4;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+ .home .subnav {
+  float: left;
+  overflow: hidden;
+}
+
+ .home .subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: #e0ecf4; /* trang nhat tren cua home sevice panther */
+  padding: 11px 18px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+ .home .navbar a:hover, .home .subnav:hover .subnavbtn {
+  background-color: #333f47;  /* den nhat tren cua home sevice panther */
+}
+
+ .home .subnav-content {
+  display: none;
+  position: absolute;
+  left: 15px;
+
+  background-color: #333f47;  /* den nhat duoi cua home sevice panther*/
+  width: 140%;
+  z-index: 1;
+}
+
+ .home .subnav-content a {
+  float: left;
+  color: #c0d2df;   /* trang nhat duoi cua home sevice panther */
+  text-decoration: none;
+}
+
+ .home .subnav-content a:hover {
+  background-color: #64b7f1; /* background o duoi */
+  color: #e2ecf2; /*mau o duoi */
+}
+
+ .home .subnav:hover .subnav-content {
+  display: block;
+}
+
+
+/* css slide  */
+* {
+            box-sizing:border-box
+          }
+          h2 {
+            text-align: center;
+          }
+          /* Slideshow container */
+          .slideshow1-container1 {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+          }
+          /* Ẩn các slider */
+          .mySlides1 {
+              display: none;
+          }
+          /* Định dạng nội dung Caption */
+          .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+          }
+
+          /* định dạng các chấm chuyển đổi các slide */
+          .dot1 {
+            cursor:pointer;
+            height: 10px;
+            width: 10px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+          }
+          /* khi được hover, active đổi màu nền */
+          .active, .dot:hover {
+           /*  background-color: #717171; */
+          }
+  /* Thêm hiệu ứng khi chuyển đổi các slide */
+          .fade1 {
+            -webkit-animation-name: fade1;
+            -webkit-animation-duration: 3s;
+            animation-name: fade1;
+            animation-duration: 3s;
+          }
+
+          @-webkit-keyframes fade1 {
+            from {opacity: .4} 
+            to {opacity: 1}
+          }
+
+          @keyframes fade1 {
+            from {opacity: .4} 
+            to {opacity: 1}
+          }
+      
+
+/*    */
+
+
+.home .slideshow1-container1 .mySlides1 {
+  padding:0px;
+  width: 980px;
+  margin-left:auto;
+  margin-right:auto;
+  position:relative;
+  top:0px;
+}
+
+/* css menu */
+
+.home .navbar {
+  top: 100px;
+  width: 980px;
+ 
+}
+
+/*css banner */
+
+
+/*css add mon an*/

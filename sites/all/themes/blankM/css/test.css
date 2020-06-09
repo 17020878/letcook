@@ -1,0 +1,67 @@
+
+
+body {
+  background: #007bff;
+  background-color: #fff;
+  background-position: center;
+  background-size: cover;
+}
+.signup{
+  font-size: 15px;
+}
+.card-signin {
+  border: 0;
+  border-radius: 10px;
+}
+
+.card-signin .card-title {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size:30px;
+  background-color:#ffffff ;
+}
+
+
+.card-signin .card-body {
+  padding: 20px;
+}
+
+.form-signin {
+  width: 100%;
+}
+
+.form-signin .btn {
+  font-size: 80%;
+  font-weight: bold;
+  padding: 15px;
+  transition: all 0.2s;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-label-group input {
+  height: auto;
+  border-radius: 5px;
+}
+
+.form-label-group>input,
+.form-label-group>label {
+  padding: 20px 20px;
+}
+
+.form-label-group>label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: all .1s ease-in-out;
+}

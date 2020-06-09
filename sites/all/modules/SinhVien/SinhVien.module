@@ -1,0 +1,516 @@
+<?php
+if(!isset($_SESSION)){
+    session_start();
+}
+function SinhVien_menu()
+{
+
+    $items['home_home'] = array(
+        'title' => t('Trang Chủ'),
+        'description' => t('tranghome'),
+        'page callback' => 'home',
+        'access arguments' => array('access content'),
+        'type' => MENU_CALLBACK,
+    );
+
+    $items['addmonan'] = array(
+        'title' => t('Thêm món ăn'),
+        'description' => t('themmonan'),
+        'page callback' => 'add_monan',
+        'access arguments' => array('access content'),
+        'type' => MENU_CALLBACK,
+    );
+
+    $items['dangki'] = array(
+        'title' => t('Đăng kí'),
+        'description' => t('dangkinguoidung'),
+        'page callback' => 'dang_ki',
+        'access arguments' => array('access content'),
+        'type' => MENU_CALLBACK,
+    );
+
+    $items['dangnhap'] = array(
+        'title' => t('Đăng nhập'),
+        'description' => t('dangnhapnguoidung'),
+        'page callback' => 'dang_nhap',
+        'access arguments' => array('access content'),
+        'type' => MENU_CALLBACK,
+    );
+
+    $items['displaycook'] = array(
+        'title' => t('Món ăn'),
+        'description' => t('dangkinguoidung'),
+        'page callback' => 'display_cook',
+        'access arguments' => array('access content'),
+        'type' => MENU_CALLBACK,
+    );
+
+    $items['listmonan'] = array(
+        'title' => t('Món ăn'),
+        'description' => t('list_mon_an'),
+        'page callback' => 'list_monan',
+        'access arguments' => array('access content'),
+        'type' => MENU_CALLBACK,
+    );
+
+    $items['dangxuat'] = array(
+        'title' => t('Đăng xuất'),
+        'description' => t('dang_xuat'),
+        'page callback' => 'dang_xuat',
+        'access arguments' => array('access content'),
+        'type' => MENU_CALLBACK,
+    );
+    $items['search_monan'] = array(
+        'title' => t('search mon an'),
+        'description' => t('search mon an'),
+        'page callback' => 'search',
+        'access arguments' => array('access content'),
+        'type' => MENU_CALLBACK,
+    );
+
+    $items['topuser'] = array(
+        'title' => t('Top thanh vien '),
+        'description' => t('Top thành viên'),
+        'page callback' => 'top_user',
+        'access arguments' => array('access content'),
+        'type' => MENU_CALLBACK,
+    );
+
+    $items['trangcanhan'] = array(
+        'title' => t('Trang cá nhân'),
+        'description' => t('Trang cá nhân'),
+        'page callback' => 'trang_ca_nhan',
+        'access arguments' => array('access content'),
+        'type' => MENU_CALLBACK,
+    );
+
+    $items['moduleajax'] = array(
+        'title' => t('search mon an'),
+        'description' => t('search mon an'),
+        'page callback' => 'moduleajax',
+        'access arguments' => array('access content'),
+        'type' => MENU_CALLBACK,
+    );
+
+    $items['deletemonan'] = array(
+        'title' => t('Xoa mon an'),
+        'description' => t('xoa mon an'),
+        'page callback' => 'delete_monan',
+        'access arguments' => array('access content'),
+        'type' => MENU_CALLBACK,
+    );
+    $items['updatepass'] = array(
+        'title' => t('Đổi mật khẩu'),
+        'description' => t('Đổi mật khẩu'),
+        'page callback' => 'update_pass',
+        'access arguments' => array('access content'),
+        'type' => MENU_CALLBACK,
+    );
+
+    return $items;
+}
+
+function SinhVien_init()
+{
+    drupal_add_js(drupal_get_path('module','SinhVien').'/js/SinhVien.js');
+    drupal_add_css(drupal_get_path('module','SinhVien').'/css/sinhvien.css');
+}
+function SinhVien_theme()
+{
+
+    $themes['Home'] = array('template' => 'templates/Home', 'arguments' => array('data'=>'') );
+    $themes['DangKi'] = array('template' => 'templates/DangKi', 'arguments' => array('data'=>'') );
+    $themes['Dangnhap'] = array('template' => 'templates/Dangnhap', 'arguments' => array('data'=>'') );
+    $themes['Addmonan'] = array('template' => 'templates/Addmonan', 'arguments' => array('data'=>'') );
+    $themes['Displaycook'] = array('template' => 'templates/Displaycook', 'arguments' => array('data'=>'') );
+    $themes['DangKi'] = array('template' => 'templates/DangKi', 'arguments' => array('data'=>'') );
+    $themes['listmonan'] = array('template' => 'templates/listmonan', 'arguments' => array('data'=>'') );
+    $themes['dangxuat'] = array('template' => 'templates/dangxuat', 'arguments' => array('data'=>'') );
+    $themes['Search'] = array('template' => 'templates/Search', 'arguments' => array('data'=>'') );
+    $themes['topUser'] = array('template' => 'templates/topUser', 'arguments' => array('data'=>'') );
+    $themes['trangcanhan'] = array('template' => 'templates/trangcanhan', 'arguments' => array('data'=>'') );
+    $themes['deletemonan'] = array('template' => 'templates/deletemonan', 'arguments' => array('data'=>'') );
+    $themes['updatepass'] = array('template' => 'templates/updatepass', 'arguments' => array('data'=>'') );
+    return $themes;
+
+}
+
+function moduleajax() {
+    $comment_text = isset($_REQUEST['cmt'])?$_REQUEST['cmt']:'';
+    $id_comment = isset($_REQUEST['id_cmt'])?$_REQUEST['id_cmt']:'';
+        db_insert('bangcomment')->fields(array(
+            'IdUser' => $_SESSION['id-user-dangmonan'],
+            'IDmonan' => $id_comment,
+            'comment' => $comment_text,
+        ))->execute();
+    $query = db_select('banguser', 'b');
+    $query->fields('b');
+    $query->condition('b.TenUser',$_SESSION['tenuser'],'=');
+    $data = $query->execute()->fetchAll();
+    $html = '<div class="comment" style="margin:5px; border-style: ridge;  border-width: 1.1px;padding:5px;height: auto;width: 730px" ;="">
+<div class="row">
+        <img src="'.'/Let_Cook/sites/all/modules/SinhVien/css/images/'.$data['0']->IMGUser .'" style=" border-radius: 50%;width:48px;height:48px; margin-left: 13px">
+        <span style=" font-weight: bold; margin-top: 19px; margin-left: 7px;">'.' '. $_SESSION['tenuser'].'</span></div>'.$comment_text.'</div>';
+    echo $html;
+
+}
+function get_node_by_type($type) {
+    $query = db_select('node', 'n');
+    $query->fields('n');
+    $query->condition("n.type",$type);
+    $data = $query->execute()->fetchAll();
+    return $data;
+}
+
+function home() {
+    $id = arg(1);
+    $data = null;
+    $query = db_select('bangcongthuc', 'b');
+    $query->fields('b');
+//    $query->condition('b.Id',$id,'=');
+    $data = $query->execute()->fetchAll();
+    return theme('Home', array('data' => $data));
+}
+
+function dang_ki() {
+    $data = null;
+    $index = 'avt.png';
+    if($_POST){
+        $id = db_insert('banguser')->fields(array(
+            'TenUser' =>$_POST['fullname'],
+            'Email' =>$_POST['email'],
+            'Password' =>$_POST['password'],
+            'IMGUser' =>  $index,
+            'level' =>'0',
+        ))->execute();
+        drupal_goto('dangnhap/'.$id);
+    }
+    return theme('DangKi', array('data' => $data));
+}
+
+function dang_nhap() {
+    $id = arg(1);
+    $data = null;
+    $query = db_select('banguser', 'b');
+    $query->fields('b');
+    $query->condition('b.Id',$id,'=');
+    $data = $query->execute()->fetchObject();
+    if(isset($_POST['btn_submit'])){
+        $email = isset($_POST['email'])?$_POST['email']:'';
+        $pass = isset($_POST['pass'])?$_POST['pass']:'';
+        $query = db_select('banguser', 'b');
+        $query->fields('b');
+        $query->condition('b.Email',$email,'=')&&
+        $query->condition('b.Password',$pass,'=');
+        $data = $query->execute()->fetchObject();
+        if ($data->Email != $email || $data->Password != $pass){
+            $html = '<div class=\'alert alert-danger\' style=\'text-align: center\'>
+					<strong>Đăng nhập không thành công !
+					<br> Kiểm tra lại email hoặc password !</strong> 
+						</div>';
+            return $html;
+        }
+        $tenuser = $data->TenUser;
+        $_SESSION['tenuser']= $tenuser;
+        $id1 = $data->Id;
+        $_SESSION['level'] = $data->level;
+        $_SESSION['id-user-dangmonan'] = $id1; // lấy
+        if (isset($_POST['remember'])) { //kiểm tra xem có check nhớ mật khẩu hay không?
+            setcookie('email',$email,time()+3600,'/','',0,0);
+            setcookie('pass',$pass,time()+3600,'/','',0,0);
+        }else {
+            setcookie('email', '', time() - 3600, '/', '', 0, 0);
+            setcookie('pass', '', time() - 3600, '/', '', 0, 0);
+        }
+
+        if($id1!=""){
+            drupal_goto('home_home/'.$id1);
+        }
+    }
+    return theme('Dangnhap', array('data' => $data));
+}
+
+function display_cook()
+{
+    $id = arg(1 );
+    $data = null;
+    $query = db_select('bangcongthuc', 'b');
+    $query->fields('b');
+    $query->condition('b.Id',$id,'=');
+    $data = $query->execute()->fetchAll();
+    $add_view = $data[0]->view;
+    //them phan update luot xem o day
+    $query =  db_update('bangcongthuc');
+    $query->expression('view', ':view', array(':view' => $add_view = $add_view+1 ));
+    $query->where('Id = :id',array(':id' => $id));
+    $query->execute();
+    return theme('Displaycook', array('data' => $data));
+}
+
+function add_monan() {
+    $data = null;
+    $index = '0';
+    $query = db_select('bangcongthuc', 'b');
+    $query->fields('b');
+    $data = $query->execute()->fetchAll();
+    if(isset($_POST['create']))
+    {
+        $file_name = $_FILES['anh']['name'];
+        $file_tmp = $_FILES['anh']['tmp_name'];
+        $file_name1 = $_FILES['anh1']['name'];
+        $file_tmp1 = $_FILES['anh1']['tmp_name'];
+        $file_name2 = $_FILES['anh2']['name'];
+        $file_tmp2 = $_FILES['anh2']['tmp_name'];
+        $file_name3 = $_FILES['anh3']['name'];
+        $file_tmp3 = $_FILES['anh3']['tmp_name'];
+        $file_name4 = $_FILES['anh4']['name'];
+        $file_tmp4 = $_FILES['anh4']['tmp_name'];
+        move_uploaded_file($file_tmp, "C:/xampp/htdocs/Let_Cook/sites/all/modules/SinhVien/css/images/$file_name") ;
+        move_uploaded_file($file_tmp1, "C:/xampp/htdocs/Let_Cook/sites/all/modules/SinhVien/css/images/$file_name1") ;
+        move_uploaded_file($file_tmp2, "C:/xampp/htdocs/Let_Cook/sites/all/modules/SinhVien/css/images/$file_name2") ;
+        move_uploaded_file($file_tmp3, "C:/xampp/htdocs/Let_Cook/sites/all/modules/SinhVien/css/images/$file_name3") ;
+        move_uploaded_file($file_tmp4, "C:/xampp/htdocs/Let_Cook/sites/all/modules/SinhVien/css/images/$file_name4") ;
+        $id = db_insert('bangcongthuc')->fields(array(
+            'IMGmonan' =>$file_name,
+            'IDUser' => $_SESSION['id-user-dangmonan'],
+            'TenCongThuc' => $_POST['tencongthuc'],
+            'NoiDungMoTa' => $_POST['motamonan'],
+            'NguyenLieu' => $_POST['nguyenlieu'],
+            'Buoc1' => $_POST['cachlamb1'],
+            'IMGbuoc1' => $file_name1,
+            'Buoc2' => $_POST['cachlamb2'],
+            'IMGbuoc2' => $file_name2,
+            'Buoc3' => $_POST['cachlamb3'],
+            'IMGbuoc3' => $file_name3,
+            'Buoc4' => $_POST['cachlamb4'],
+            'IMGbuoc4' => $file_name4,
+            'view' => $index,
+
+        ))->execute();
+
+        drupal_goto('listmonan/');
+
+    }
+    return theme('Addmonan', array('data' => $data));
+
+}
+
+function list_monan() {
+    $data = null;
+    $query = db_select('banguser', 'bu' );
+    $query->innerjoin('bangcongthuc', 'bc', 'bc.IDUser = bu.Id');
+    $query->where('level = :level',array(':level' => 0 ));
+    $query->fields('bu',array( 'TenUser'));
+    $query->fields('bc',array( 'TenCongThuc', 'IMGmonan', 'NoiDungMoTa', 'Id', 'view' ));
+    $data = $query->execute()->fetchAll();
+    return theme('listmonan', array('data' => $data));
+}
+
+function dang_xuat() {
+    $data = null;
+    unset($_SESSION['tenuser']);
+    session_destroy();
+    drupal_goto('dangnhap');
+    return theme('dangxuat', array('data' => $data));
+}
+
+function search() {
+    $id = arg(1);
+    $data = null;
+    $keyword = $_POST['url'];
+    $keyword = '%'.$keyword.'%';
+    $query = db_select('banguser', 'bu' );
+    $query->innerjoin('bangcongthuc', 'bc', 'bc.IDUser = bu.Id');
+    $query->fields('bu',array( 'TenUser', 'IMGUser'));
+    $query->fields('bc',array( 'TenCongThuc', 'IMGmonan', 'NoiDungMoTa', 'Id', 'view' ));
+    $query->condition('bc.TenCongThuc',$keyword,'LIKE');
+    $data = $query->execute()->fetchAll();
+//    $data = null;
+//    $query = db_select('bangcongthuc', 'b');
+//    $query->fields('b');
+//    $query->condition('b.TenCongThuc',$keyword,'LIKE');
+//    $data = $query->execute()->fetchAll();
+    return theme('Search', array('data' => $data));
+}
+function get_name_user(){
+    $data = null;
+    $query = db_select('banguser', 'bu' );
+    $query->innerjoin('bangcongthuc', 'bc', 'bc.IDUser = bu.Id');
+    $query->where('level = :level',array(':level' => 0 ));
+    $query->fields('bu',array( 'TenUser', 'IMGUser'));
+    $query->fields('bc',array( 'TenCongThuc', 'IMGmonan', 'NoiDungMoTa', 'Id'));
+    $data = $query->execute()->fetchAll();
+    return $data;
+}
+function get_comment($id){
+    $data = null;
+        $query = db_select('bangcomment', 'cmt' );
+        $query->fields('cmt');
+        $query->where('IDmonan = :IDmonan',array(':IDmonan' => $id ));
+        $data = $query->execute()->fetchAll();
+    return $data;
+}
+function top_user() {
+    $data = null;
+    $query = db_select('bangcongthuc', 'bc' );
+    $query->innerjoin('banguser', 'bu', 'bu.Id = bc.IDUser');
+    $query->where('level = :level',array(':level' => 0 ));
+    $query->addExpression('COUNT(bc.Id)', 'countct');
+    $query->fields('bu',array( 'TenUser', 'IMGUser', 'Email'));
+    $query->groupBy('bc.IDUser');
+    $query->orderBy('countct', 'DESC');
+    $data = $query->execute()->fetchAll();
+// SELECT banguser.TenUser, COUNT(*) AS countct
+// FROM banguser
+// INNER JOIN bangcongthuc on banguser.Id = bangcongthuc.IDUser
+// GROUP by bangcongthuc.IDUser
+// ORDER By countct
+// DESC LIMIT 10
+    return theme('topUser', array('data' => $data));
+}
+function trang_ca_nhan() {
+    $data = null;
+    $query = db_select('bangcongthuc', 'b');
+    $query->fields('b');
+    $query->condition('b.IdUser', $_SESSION['id-user-dangmonan'], '=' );
+    $data = $query->execute()->fetchAll();
+
+    if(isset($_POST['submit-profile']))
+    {
+        $file_name = $_FILES['anh']['name'];
+        $file_tmp = $_FILES['anh']['tmp_name'];
+        $expensions= array("jpeg","jpg","png");
+        move_uploaded_file($file_tmp, "C:/xampp/htdocs/Let_Cook/sites/all/modules/SinhVien/css/images/$file_name") ;
+        //update vao db
+        $query =  db_update('banguser');
+        $query->expression('IMGUser', ':IMGUser', array(':IMGUser' => $file_name ));
+        $query->where('Id = :id',array(':id' => $_SESSION['id-user-dangmonan']));
+        $query->execute();
+    }
+    return theme('trangcanhan', array('data' => $data));
+}
+function count_congthuc(){
+    $data = null;
+    $query = db_select('bangcongthuc', 'bc' );
+    $query->condition('bc.IdUser', $_SESSION['id-user-dangmonan'], '=' );
+    $query->innerjoin('banguser', 'bu', 'bu.Id = bc.IDUser');
+    $query->addExpression('COUNT(bc.Id)', 'countct');
+    $query->fields('bu',array( 'TenUser', 'IMGUser'));
+    $query->groupBy('bc.IDUser');
+    $query->orderBy('countct', 'DESC');
+    $data = $query->execute()->fetchAll();
+    return $data;
+}
+function delete_monan(){
+    $id = arg(1);
+    $data = null;
+    $query = db_delete('bangcongthuc');
+    $query->where('Id = :id',array(':id' => $id));
+    $query->execute();
+    drupal_goto('trangcanhan');
+    return theme('deletemonan', array('data' => $data));
+}
+function display_imguser_cmt($id){
+    $data = null;
+    $query = db_select('bangcomment', 'bc' );
+    $query->innerjoin('banguser', 'bu', 'bu.Id = bc.IdUser');
+    $query->where('bc.IDmonan = :IDmonan',array(':IDmonan' => $id ));
+    $query->fields('bu',array( 'TenUser', 'IMGUser'));
+    $query->fields('bc',array( 'comment'));
+    $data = $query->execute()->fetchAll();
+    return $data;
+}
+function get_dishes_admin(){
+    $data = null;
+    $query = db_select('banguser', 'bu');
+    $query->innerJoin('bangcongthuc', 'bc', 'bc.IDUser = bu.Id');
+    $query->where('level = :level',array(':level' => 1));
+    $query->fields('bu',array( 'TenUser', 'IMGUser'));
+    $query->fields('bc',array( 'TenCongThuc', 'IMGmonan', 'NoiDungMoTa', 'Id'));
+    $data = $query->execute()->fetchAll();
+    return $data;
+}
+function get_img_user(){
+    $data = null;
+    $query = db_select('banguser', 'bu' );
+    $query->fields('bu');
+    $query->where('bu.TenUser = :tenuser',array(':tenuser' => $_SESSION['tenuser'] ));
+    $data = $query->execute()->fetchAll();
+    return $data;
+}
+function count_all_congthuc(){
+    $data = null;
+    $query = db_select('bangcongthuc', 'bc' );
+    $query->innerjoin('banguser', 'bu', 'bu.Id = bc.IDUser');
+    $query->where('level = :level',array(':level' => 0));
+    $query->addExpression('COUNT(bc.Id)', 'countct');
+    $query->fields('bu',array( 'TenUser', 'IMGUser'));
+    $query->groupBy('bc.IDUser');
+    $query->orderBy('countct', 'DESC');
+    $data = $query->execute()->fetchAll();
+    return $data;
+}
+$success = array();
+function update_pass(){
+    $id = arg(1);
+    $data = null;
+    $query = db_select('banguser', 'b');
+    $query->fields('b');
+    $query->condition('b.Id',$id,'=');
+    $data = $query->execute()->fetchObject();
+    if(isset($_POST['btn_submit_change'])){
+        $c_pass = isset($_POST['c_pass'])?$_POST['c_pass']:'';
+        $n_pass = isset($_POST['n_pass'])?$_POST['n_pass']:'';
+        $n_pass_verify = isset($_POST['n_pass_verify'])?$_POST['n_pass_verify']:'';
+        $query = db_select('banguser', 'b');
+        $query->fields('b');
+//        $query->condition('b.Password',$c_pass,'=');
+//        $query->condition('b.Email',$c_email,'=');
+        $query->where('Id = :id',array(':id' => $_SESSION['id-user-dangmonan'] ));
+        $data = $query->execute()->fetchObject();
+
+        if ($c_pass == $n_pass){
+             $success[] = 'change_lose';
+             $html = '<div class=\'alert alert-danger\' style=\'text-align: center\'>
+					<strong>Đổi mật khẩu không thành công!</strong> 
+						</div>';
+             return $html;
+        }
+        elseif ($c_pass != $data->Password){
+            $success[] = 'change_lose';
+            $html = '<div class=\'alert alert-danger\' style=\'text-align: center\'>
+					<strong>Đổi mật khẩu không thành công!</strong> 
+						</div>';
+            return $html;
+        }
+        elseif ($n_pass != $n_pass_verify){
+            $success[] = 'change_lose';
+            $html = '<div class=\'alert alert-danger\' style=\'text-align: center\'>
+					<strong>Đổi mật khẩu không thành công!</strong> 
+						</div>';
+            return $html;
+        }
+        else{
+            $query =  db_update('banguser');
+            $query->expression('Password', ':password', array(':password' => $n_pass ));
+            $query->where('Id = :id',array(':id' => $_SESSION['id-user-dangmonan'] ));
+            $query->execute();
+            $success[] = 'change_success';
+            $html = '<div class=\'alert alert-success\' style=\'text-align: center\'>
+					<strong>Đổi mật khẩu thành công!</strong> 
+						</div>';
+            return $html;
+        }
+        if (isset($_POST['remember2'])) { //kiểm tra xem có check nhớ mật khẩu hay không?
+            setcookie('email',$c_email,time()+3600,'/','',0,0);
+            setcookie('pass',$n_pass,time()+3600,'/','',0,0);
+        }else {
+            setcookie('email', '', time() - 3600, '/', '', 0, 0);
+            setcookie('pass', '', time() - 3600, '/', '', 0, 0);
+        }
+//        if($_SESSION['id-user-dangmonan']!=""){
+//            drupal_goto('home_home/'.$_SESSION['id-user-dangmonan']);
+//        }
+    }
+    return theme('updatepass', array('data' => $data));
+}

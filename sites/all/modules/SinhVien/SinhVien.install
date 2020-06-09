@@ -1,0 +1,216 @@
+<?php
+/**
+ * create table
+ */
+
+function SinhVien_schema()
+{
+	$schema = array();
+
+      $schema['bangUser'] = array(
+              'description' => 'Table for profile',
+              'fields' => array(
+                  'Id' => array(
+                      'description' => 'Id auto increment.',
+                      'type' => 'serial',
+                      'unsigned' => TRUE,
+                      'not null' => TRUE,
+                  ),
+
+                  'TenUser' => array(
+                      'description' => 'tenmonan',
+                      'type' => 'varchar',
+                      'length' => 255,
+                      'not null' => TRUE,
+                  ),
+
+                  'Email' => array(
+                      'description' => 'thongtinmonan',
+                      'type' => 'varchar',
+                      'length' => 255,
+                      'not null' => TRUE,
+                  ),
+
+                  'Password' => array(
+                      'description' => 'nguyenlieu',
+                      'type' => 'varchar',
+                      'length' => 255,
+                      'not null' => TRUE,
+                  ),
+                  'IMGUser' => array(
+                      'description' => 'image user',
+                      'type' => 'varchar',
+                      'length' => 255,
+                      'not null' => TRUE,
+                  ),
+                   'level' => array(
+                      'description' => 'leveluser',
+                      'type' => 'int',
+                      'length' => 10,
+                      'not null' => TRUE,
+                  ),
+              ),
+              'primary key' => array('id')
+
+          );
+
+          $schema['bangcongthuc'] = array(
+                        'description' => 'cong thuc mon an',
+                        'fields' => array(
+                            'Id' => array(
+                                'description' => 'Id auto increment.',
+                                'type' => 'serial',
+                                'unsigned' => TRUE,
+                                'not null' => TRUE,
+                            ),
+                            'IDUser' => array(
+                                'description' => 'id_user',
+                                'type' => 'int',
+                                'length' => 10,
+                                'not null' => TRUE,
+                            ),
+                            'IMGmonan' => array(
+                                'description' => 'username',
+                                'type' => 'varchar',
+                                'length' => 255,
+                                'not null' => TRUE,
+                            ),
+
+
+                            'TenCongThuc' => array(
+                                'description' => 'username',
+                                'type' => 'varchar',
+                                'length' => 1000,
+                                'not null' => TRUE,
+                            ),
+
+
+                            'NoiDungMoTa' => array(
+                                'description' => 'tenmonan',
+                                'type' => 'varchar',
+                                'length' => 1000,
+                                'not null' => TRUE,
+                            ),
+
+                            'NguyenLieu' => array(
+                                'description' => 'thongtinmonan',
+                                'type' => 'varchar',
+                                'length' => 1000,
+                                'not null' => TRUE,
+                            ),
+
+                            'Buoc1' => array(
+                                'description' => 'nguyenlieu',
+                                'type' => 'varchar',
+                                'length' => 1000,
+                                'not null' => TRUE,
+                            ),
+                            'IMGbuoc1' => array(
+                                'description' => 'nguyenlieu',
+                                'type' => 'varchar',
+                                'length' => 255,
+                                'not null' => TRUE,
+                            ),
+
+                            'Buoc2' => array(
+                                'description' => 'nguyenlieu',
+                                'type' => 'varchar',
+                                'length' => 1000,
+                                'not null' => TRUE,
+                            ),
+
+                            'IMGbuoc2' => array(
+                                'description' => 'nguyenlieu',
+                                'type' => 'varchar',
+                                'length' => 255,
+                                'not null' => TRUE,
+                            ),
+
+                            'Buoc3' => array(
+                                'description' => 'nguyenlieu',
+                                'type' => 'varchar',
+                                'length' => 1000,
+                                'not null' => TRUE,
+                            ),
+
+                            'IMGbuoc3' => array(
+                                'description' => 'nguyenlieu',
+                                'type' => 'varchar',
+                                'length' => 255,
+                                'not null' => TRUE,
+                            ),
+
+                            'Buoc4' => array(
+                                'description' => 'nguyenlieu',
+                                'type' => 'varchar',
+                                'length' => 1000,
+                                'not null' => TRUE,
+                            ),
+
+                            'IMGbuoc4' => array(
+                                'description' => 'nguyenlieu',
+                                'type' => 'varchar',
+                                'length' => 255,
+                                'not null' => TRUE,
+                            ),
+                                'view' => array(
+                                'description' => 'luotxem',
+                                'type' => 'int',
+                                'length' => 10,
+                                'not null' => TRUE,
+                             ),
+
+                        ),
+                        'primary key' => array('id')
+
+           );
+
+
+            $schema['bangcomment'] = array(
+                         'description' => 'Table for profile',
+                         'fields' => array(
+                             'Id' => array(
+                                 'description' => 'Id auto increment.',
+                                 'type' => 'serial',
+                                 'unsigned' => TRUE,
+                                 'not null' => TRUE,
+                             ),
+
+                             'IdUser' => array(
+                                 'description' => 'nameUser',
+                                 'type' => 'int',
+                                 'length' => 10,
+                                 'not null' => TRUE,
+                             ),
+
+                             'IDmonan' => array(
+                                 'description' => 'IDmonan',
+                                 'type' => 'int',
+                                 'length' => 255,
+                                 'not null' => TRUE,
+                             ),
+
+                             'comment' => array(
+                                 'description' => 'comment',
+                                 'type' => 'varchar',
+                                 'length' => 1000,
+                                 'not null' => TRUE,
+                             ),
+                         ),
+                         'primary key' => array('id')
+
+                     );
+
+	return $schema;
+
+}
+
+
+function SinhVien_install() {
+// Use schema API to create database table.
+    drupal_install_schema('SinhVien');
+}
+function SinhVien_uninstall() {
+// Remove tables.
+    drupal_uninstall_schema('SinhVien');
+}

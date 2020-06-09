@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="14628a69-fd83-483c-8cf2-4cf7f9db2b32" name="Default Changelist" comment="commit web" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/SinhVien.module">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="357" column="19" selection-start-line="357" selection-start-column="19" selection-end-line="357" selection-end-column="19" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/README.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/templates/Displaycook.tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1411">
+              <caret line="83" column="121" selection-start-line="83" selection-start-column="121" selection-end-line="83" selection-end-column="121" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/templates/trangcanhan.tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/templates/updatepass.tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/templates/topUser.tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1122">
+              <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/templates/Home.tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2057">
+              <caret line="121" column="143" selection-start-line="121" selection-start-column="58" selection-end-line="121" selection-end-column="143" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/templates/listmonan.tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1105">
+              <caret line="65" column="168" selection-start-line="65" selection-start-column="162" selection-end-line="65" selection-end-column="168" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/blankM/templates/page.tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1751">
+              <caret line="103" column="110" selection-start-line="103" selection-start-column="110" selection-end-line="103" selection-end-column="110" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>btn-outline</find>
+      <find>body</find>
+      <find>naba</find>
+      <find>destination</find>
+      <find>navbar</find>
+      <find>border-radius</find>
+      <find>8px</find>
+      <find>card</find>
+      <find>.fly-home</find>
+      <find>btn</find>
+      <find>btn-orange</find>
+      <find>a</find>
+      <find>off</find>
+      <find>offers-item</find>
+      <find>image-upload-wrap</find>
+      <find>chatbot</find>
+      <find>calajax</find>
+      <find>container1</find>
+      <find>full</find>
+      <find>.navbar</find>
+      <find>item</find>
+      <find>recipe-more-inner</find>
+      <find>.result-recipe-item .item-inner .item-photo</find>
+      <find>footer</find>
+      <find>container</find>
+      <find>db_insert</find>
+      <find>list-inline</find>
+      <find>a:-webkit-any-link</find>
+      <find>index</find>
+      <find>loadMor</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$USER_HOME$/Downloads/flygaruda2019.github.io-master/index.html" />
+        <option value="$PROJECT_DIR$/sites/all/modules/SinhVien/templates/search_SinhVien.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/modules/SinhVien/templates/tao_SinhVien.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/modules/SinhVien/templates/SinhVien.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/modules/SinhVien/templates/themMonAn2.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/modules/SinhVien/templates/Addmonan.php" />
+        <option value="$PROJECT_DIR$/sites/all/modules/SinhVien/js/SinhVien.js" />
+        <option value="$PROJECT_DIR$/sites/all/modules/SinhVien/templates/Displaycook.php" />
+        <option value="$PROJECT_DIR$/sites/all/modules/SinhVien/css/cookcss.css" />
+        <option value="$PROJECT_DIR$/sites/all/modules/SinhVien/css/sinhvien.css" />
+        <option value="$PROJECT_DIR$/sites/all/themes/blankM/css/style.css" />
+        <option value="$PROJECT_DIR$/sites/all/themes/blankM/blankM.info" />
+        <option value="$PROJECT_DIR$/sites/all/modules/SinhVien/templates/DangKi.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/themes/blankM/css/styles.css" />
+        <option value="$PROJECT_DIR$/sites/all/modules/SinhVien/css/cook2css.css" />
+        <option value="$PROJECT_DIR$/chatbot-ui/index.html" />
+        <option value="$PROJECT_DIR$/sites/all/modules/SinhVien/templates/deletemonan.tpl.php" />
+        <option value="$PROJECT_DIR$/btlmanh/css/stylebtl.css" />
+        <option value="$PROJECT_DIR$/chatbot-ui/js/main.js" />
+        <option value="$PROJECT_DIR$/web.config" />
+        <option value="$PROJECT_DIR$/sites/all/modules/SinhVien/templates/topUser.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/modules/SinhVien/templates/update_pass.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/modules/SinhVien/SinhVien.install" />
+        <option value="$PROJECT_DIR$/sites/all/modules/SinhVien/templates/Home.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/modules/SinhVien/templates/Search.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/modules/SinhVien/templates/Dangnhap.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/modules/SinhVien/templates/updatepass.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/modules/SinhVien/templates/listmonan.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/modules/SinhVien/templates/Addmonan.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/themes/blankM/js/main.js" />
+        <option value="$PROJECT_DIR$/sites/all/modules/SinhVien/templates/trangcanhan.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/themes/blankM/templates/page.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/modules/SinhVien/SinhVien.module" />
+        <option value="$PROJECT_DIR$/sites/all/modules/SinhVien/templates/Displaycook.tpl.php" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="820" />
+    <option name="height" value="570" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Let_Cook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Let_Cook" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Let_Cook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Let_Cook" type="462c0819:PsiDirectoryNode" />
+              <item name="btlmanh" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Let_Cook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Let_Cook" type="462c0819:PsiDirectoryNode" />
+              <item name="btlmanh" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap-4.3.1-dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Let_Cook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Let_Cook" type="462c0819:PsiDirectoryNode" />
+              <item name="btlmanh" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Let_Cook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Let_Cook" type="462c0819:PsiDirectoryNode" />
+              <item name="chatbot-ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Let_Cook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Let_Cook" type="462c0819:PsiDirectoryNode" />
+              <item name="chatbot-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Let_Cook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Let_Cook" type="462c0819:PsiDirectoryNode" />
+              <item name="sites" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Let_Cook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Let_Cook" type="462c0819:PsiDirectoryNode" />
+              <item name="sites" type="462c0819:PsiDirectoryNode" />
+              <item name="all" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Let_Cook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Let_Cook" type="462c0819:PsiDirectoryNode" />
+              <item name="sites" type="462c0819:PsiDirectoryNode" />
+              <item name="all" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Let_Cook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Let_Cook" type="462c0819:PsiDirectoryNode" />
+              <item name="sites" type="462c0819:PsiDirectoryNode" />
+              <item name="all" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="SinhVien" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Let_Cook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Let_Cook" type="462c0819:PsiDirectoryNode" />
+              <item name="sites" type="462c0819:PsiDirectoryNode" />
+              <item name="all" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="SinhVien" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Let_Cook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Let_Cook" type="462c0819:PsiDirectoryNode" />
+              <item name="sites" type="462c0819:PsiDirectoryNode" />
+              <item name="all" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="SinhVien" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Let_Cook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Let_Cook" type="462c0819:PsiDirectoryNode" />
+              <item name="sites" type="462c0819:PsiDirectoryNode" />
+              <item name="all" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="SinhVien" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Let_Cook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Let_Cook" type="462c0819:PsiDirectoryNode" />
+              <item name="sites" type="462c0819:PsiDirectoryNode" />
+              <item name="all" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Let_Cook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Let_Cook" type="462c0819:PsiDirectoryNode" />
+              <item name="sites" type="462c0819:PsiDirectoryNode" />
+              <item name="all" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="blankM" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Let_Cook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Let_Cook" type="462c0819:PsiDirectoryNode" />
+              <item name="sites" type="462c0819:PsiDirectoryNode" />
+              <item name="all" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="blankM" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Let_Cook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Let_Cook" type="462c0819:PsiDirectoryNode" />
+              <item name="sites" type="462c0819:PsiDirectoryNode" />
+              <item name="all" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="blankM" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Let_Cook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Let_Cook" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FlyGaruda" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Let_Cook\sites\all\modules\SinhVien\css" />
+      <recent name="C:\xampp\htdocs\Let_Cook\sites\all\modules\SinhVien\css\images" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="14628a69-fd83-483c-8cf2-4cf7f9db2b32" name="Default Changelist" comment="" />
+      <created>1569839999916</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569839999916</updated>
+      <workItem from="1569840002589" duration="159000" />
+      <workItem from="1569840179325" duration="1368000" />
+      <workItem from="1569895265630" duration="20925000" />
+      <workItem from="1569924428342" duration="3959000" />
+      <workItem from="1569998810366" duration="1554000" />
+      <workItem from="1570085924347" duration="3576000" />
+      <workItem from="1570124413846" duration="702000" />
+      <workItem from="1570172233471" duration="3795000" />
+      <workItem from="1570215584640" duration="651000" />
+      <workItem from="1570259596369" duration="6462000" />
+      <workItem from="1570345959242" duration="11229000" />
+      <workItem from="1570408680972" duration="17323000" />
+      <workItem from="1570470158505" duration="627000" />
+      <workItem from="1570502146330" duration="18558000" />
+      <workItem from="1570549425649" duration="5999000" />
+      <workItem from="1570603429201" duration="6465000" />
+      <workItem from="1570696330938" duration="4923000" />
+      <workItem from="1570777977986" duration="672000" />
+      <workItem from="1570877751257" duration="7108000" />
+      <workItem from="1570943745657" duration="912000" />
+      <workItem from="1570944935062" duration="721000" />
+      <workItem from="1571015204057" duration="5240000" />
+      <workItem from="1571038207640" duration="3029000" />
+      <workItem from="1571070820859" duration="611000" />
+      <workItem from="1571105451235" duration="6901000" />
+      <workItem from="1571208006048" duration="3951000" />
+      <workItem from="1571296296104" duration="3116000" />
+      <workItem from="1571383429177" duration="3413000" />
+      <workItem from="1571451199357" duration="3066000" />
+      <workItem from="1571619896409" duration="6952000" />
+      <workItem from="1571670582694" duration="5532000" />
+      <workItem from="1571752310955" duration="9477000" />
+      <workItem from="1571812118812" duration="6792000" />
+      <workItem from="1571899330678" duration="3560000" />
+      <workItem from="1571987554945" duration="663000" />
+      <workItem from="1572030253728" duration="3720000" />
+      <workItem from="1572115449257" duration="2630000" />
+      <workItem from="1572151814411" duration="6991000" />
+      <workItem from="1572224583938" duration="7698000" />
+      <workItem from="1572278220313" duration="9792000" />
+      <workItem from="1572511736772" duration="2631000" />
+      <workItem from="1572625432823" duration="3463000" />
+      <workItem from="1572680420699" duration="16364000" />
+      <workItem from="1572827906305" duration="5347000" />
+      <workItem from="1572881851451" duration="2542000" />
+      <workItem from="1572891747890" duration="1279000" />
+      <workItem from="1572966461254" duration="1322000" />
+      <workItem from="1572967792553" duration="434000" />
+      <workItem from="1572968298538" duration="1248000" />
+      <workItem from="1573028034933" duration="1994000" />
+      <workItem from="1573058372326" duration="4877000" />
+      <workItem from="1573107954401" duration="10929000" />
+      <workItem from="1573139437081" duration="8854000" />
+      <workItem from="1573175071880" duration="2142000" />
+      <workItem from="1573196941297" duration="3585000" />
+      <workItem from="1573226516408" duration="10537000" />
+      <workItem from="1573433985127" duration="2022000" />
+      <workItem from="1573439473066" duration="1696000" />
+      <workItem from="1573457107343" duration="3226000" />
+      <workItem from="1573486584178" duration="9202000" />
+      <workItem from="1573547195266" duration="18633000" />
+      <workItem from="1573625880135" duration="7996000" />
+      <workItem from="1573657590119" duration="5838000" />
+      <workItem from="1573711879599" duration="5539000" />
+      <workItem from="1573717496469" duration="5106000" />
+      <workItem from="1573749443287" duration="4716000" />
+      <workItem from="1573801926626" duration="10964000" />
+      <workItem from="1573829765526" duration="4352000" />
+      <workItem from="1573914997911" duration="9989000" />
+      <workItem from="1574002435911" duration="5053000" />
+      <workItem from="1574037154283" duration="4794000" />
+      <workItem from="1574045210315" duration="1112000" />
+      <workItem from="1574048911751" duration="2062000" />
+      <workItem from="1574061934853" duration="17626000" />
+      <workItem from="1574088367969" duration="9812000" />
+      <workItem from="1574130184178" duration="20928000" />
+      <workItem from="1574176546233" duration="12577000" />
+      <workItem from="1574235295564" duration="289000" />
+      <workItem from="1574237064152" duration="4479000" />
+      <workItem from="1574261612332" duration="634000" />
+      <workItem from="1574316693954" duration="599000" />
+      <workItem from="1574406638175" duration="22000" />
+      <workItem from="1574737831359" duration="92000" />
+      <workItem from="1574738309507" duration="767000" />
+      <workItem from="1574923842118" duration="1000000" />
+      <workItem from="1574925079448" duration="3185000" />
+      <workItem from="1575001217529" duration="13000" />
+      <workItem from="1576203918846" duration="132000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="467111000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25503355" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24832214" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit web" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit web" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/sites/default/files/a33bdaef9bbe7ce025af.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/default/files/bug.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/default/files/cc.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/default/files/Crop1.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/default/files/ganuong3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/default/files/ganuong4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/default/files/triet 2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/blankM/css/pages/index.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/blankM/color/base.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/blankM/color/color.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1666" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/blankM/color/preview.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/blankM/color/preview.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/blankM/color/preview.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/blankM/color/preview.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/css/images/cookcss.css" />
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/css/cookcss.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/blankM/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="569" column="14" selection-start-line="569" selection-start-column="14" selection-end-line="569" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/css/sinhvien.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3944">
+          <caret line="232" column="18" selection-start-line="232" selection-start-column="18" selection-end-line="232" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="506" column="16" selection-start-line="506" selection-start-column="16" selection-end-line="506" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/blankM/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="77338" selection-start-column="77327" selection-end-column="77338" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/btlmanh/btl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="525" column="37" selection-start-line="525" selection-start-column="37" selection-end-line="525" selection-end-column="37" />
+          <folding>
+            <element signature="n#div#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#nav#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/blankM/templates/maintenance-page.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatbot-ui/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/chatbot-ui/js/jquery.min.js" />
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/blankM/js/popper.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/css/cook2css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatbot-ui/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="9" lean-forward="true" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/blankM/templates/node.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/templates/DangKi.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/btlmanh/css/stylebtl.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11593">
+          <caret line="180" column="24" lean-forward="true" selection-start-line="180" selection-start-column="24" selection-end-line="180" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatbot-ui/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="964">
+          <caret line="109" column="50" selection-start-line="109" selection-start-column="50" selection-end-line="109" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#button#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/templates/moduleajax.tpl.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/SinhVien.install">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="181" column="47" selection-start-line="181" selection-start-column="47" selection-end-line="181" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/templates/deletemonan.tpl.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/templates/dangxuat.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/blankM/blankM.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/templates/Dangnhap.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="95" selection-start-line="7" selection-start-column="95" selection-end-line="7" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/templates/Addmonan.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7208">
+          <caret line="424" column="34" selection-start-line="424" selection-start-column="34" selection-end-line="424" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/templates/Search.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/blankM/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/templates/Displaycook.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="83" column="121" selection-start-line="83" selection-start-column="121" selection-end-line="83" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/templates/updatepass.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/templates/topUser.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/templates/Home.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2057">
+          <caret line="121" column="143" selection-start-line="121" selection-start-column="58" selection-end-line="121" selection-end-column="143" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/templates/listmonan.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="65" column="168" selection-start-line="65" selection-start-column="162" selection-end-line="65" selection-end-column="168" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/blankM/templates/page.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1751">
+          <caret line="103" column="110" selection-start-line="103" selection-start-column="110" selection-end-line="103" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/templates/trangcanhan.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/README.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/SinhVien/SinhVien.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="357" column="19" selection-start-line="357" selection-start-column="19" selection-end-line="357" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

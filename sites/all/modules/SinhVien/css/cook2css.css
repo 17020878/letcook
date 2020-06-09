@@ -1,0 +1,14 @@
+
+.cachlam,.cacbuoc,.commentcontainer{
+  margin-top: 20px;
+  border-radius: 10px;
+  margin-left: 380px;
+  background-color:#fff;
+  width: 750px;
+}
+.fa-plus-circle{
+  content: "\f055";
+}
+.text-blue{
+  color: #428bca;
+}
